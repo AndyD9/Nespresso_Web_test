@@ -1,11 +1,6 @@
-body {
-  /* On retire les marge / padding par défaut */
-  margin: 0;
-  padding: 0;
-}
-
 .nespressologo{
 	margin-top: 2%;
+  margin-bottom: 2%;
 	width: 20%;
 }
 
