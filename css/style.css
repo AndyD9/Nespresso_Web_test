@@ -1,7 +1,41 @@
+body{
+	display: grid;
+}
 
 .container{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 10px;
 	grid-auto-rows: minmax(100px, auto);
+	background-color: yellow;
+}
+
+.headerLogo{
+	background-color: red;
+}
+
+.nespressologo{
+	margin-top: 4%;
+	margin-bottom: 4%;
+	width: 20%;
+}
+
+.navList{
+	display: none;
+}
+
+@media (min-width: 1024px) {
+ .navList {
+	 grid-column: 3;
+   /* On affiche les <li> en liste */
+   display: flex;
+   justify-content: space-between;
+   /*
+   On met une largeur afin que les <li> prennent
+   l'espace qu'on lui donne
+   */
+   /* Retirer les puces de la liste */
+   list-style: none;
+   float: right;
+ }
 }
